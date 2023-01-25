@@ -23,7 +23,7 @@ export default function App() {
       resultCalc = resultMale;
     } else if (gender === "female" && resultFemale >= 0) {
       resultCalc = resultFemale;
-    } else if (resultMale < 0 || resultFemale < 0) {
+    } else {
       resultCalc = 0;
     }
     setResult(resultCalc);
