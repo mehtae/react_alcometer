@@ -1,5 +1,6 @@
 import "./App.css";
 import { useState } from "react";
+import Dropdown from "./components/Dropdown";
 
 export default function App() {
   const [weight, setWeight] = useState(0);
@@ -45,26 +46,17 @@ export default function App() {
         </div>
         <div>
           <label>Bottles </label>
-          <br />
-          <input
-            type="number"
-            name="bottles"
-            step="1"
-            value={bottles}
-            onChange={(e) => setBottles(e.target.value)}
-          />
+          <br /> 
+          <select value={bottles} onChange={(e) => setBottles(e.target.value)}>
+            <Dropdown />
+          </select> 
         </div>
         <div>
           <label>Time in hr</label>
           <br />
-          <input
-            name="time"
-            type="number"
-            step="1"
-            min="0"
-            value={time}
-            onChange={(e) => setTime(e.target.value)}
-          />
+          <select value={time} onChange={(e) => setTime(e.target.value)}>
+            <Dropdown />  
+          </select>
         </div>
         <div>
           <input
