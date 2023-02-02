@@ -46,16 +46,16 @@ export default function App() {
         </div>
         <div>
           <label>Bottles </label>
-          <br /> 
+          <br />
           <select value={bottles} onChange={(e) => setBottles(e.target.value)}>
             <Dropdown />
-          </select> 
+          </select>
         </div>
         <div>
           <label>Time in hr</label>
           <br />
           <select value={time} onChange={(e) => setTime(e.target.value)}>
-            <Dropdown />  
+            <Dropdown />
           </select>
         </div>
         <div>
